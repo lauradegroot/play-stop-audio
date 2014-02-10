@@ -1,4 +1,4 @@
 audioplugin
 ===========
 
-Simple plugin that uses the html5 audio element's pause button as stop
+Was asked to make the html5 audio pause button function as stop but decided to make buttons so that they could be styled. 
