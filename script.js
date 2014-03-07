@@ -1,6 +1,6 @@
 var audio = $('audio')[0];
 
-$("button").click(function () {
+$(document).on("click", "button", function() {
    (audio.paused) ? audio.play() : audio.pause();
    currentTime = 0;
    $("button").toggle();
