@@ -1,14 +1,11 @@
-var audio = document.getElementsByTagName('audio')[0];
+var audio = $('audio')[0];
 
-$("#stopBtn").click(function () {
-    audio.pause();
-    audio.currentTime = 0;
-    $("#stopBtn").hide();
-    $("#playBtn").show();
+$(document).on("click", "button", function() {
+   (audio.paused) ? audio.play() : audio.pause();
+   currentTime = 0;
+   $("button").toggle();
 });
 
-$("#playBtn").click(function () {    
-    audio.play();  
-    $("#playBtn").hide();
-    $("#stopBtn").show();
-});
+
+
+
